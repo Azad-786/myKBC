@@ -136,8 +136,9 @@ import Start from './components/Start';
     {stop ? <h1 className='endText'>You earned:{earned}</h1> :(
       <>
       <div className='top'>
+      <h2 className='' style={{textAlign:"center", padding:"20px", color:"yellow"}}>You Logged In :- {userName}</h2>
         <div className='timer'>
-        <Timer setStop={setStop} questionNumber={questionNumber}/>
+        <Timer className="timercount" setStop={setStop} questionNumber={questionNumber}/>
         </div>
       </div>
       <div className='bottom'>
